@@ -1,9 +1,9 @@
 function getTotalBooksCount(books) {
-    return books.length;
+    return getArrayLength(books);
     }
     
     function getTotalAccountsCount(accounts) {
-    return accounts.length;
+    return getArrayLength(accounts);
     }
     
     function getBooksBorrowedCount(books) {
@@ -50,7 +50,10 @@ function getTotalBooksCount(books) {
       return final;
     
     }
-    
+    //EZPZ helper function
+    function getArrayLength(item){
+      return item.length;
+    }
     module.exports = {
       getTotalBooksCount,
       getTotalAccountsCount,
